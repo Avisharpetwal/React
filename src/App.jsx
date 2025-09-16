@@ -8,6 +8,8 @@ import User from "./User";
 import Student from "./Student";
 import Wrapper from "./Wrapper";
 import Skills from "./Skills";
+import Logical from "./Components/LogicalAnd";
+import Listapp from "./Components/Exercise3";
 function App() {
 
   // const [fruit,setFruit]=useState("Apple");
@@ -75,6 +77,8 @@ function App() {
         <h1>I Am Avishar Petwal How Are You</h1>
       </Wrapper> */}
       <Skills/>
+      <Logical/>
+      <Listapp/>
 
     </div>
   
