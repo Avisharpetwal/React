@@ -10,6 +10,10 @@ import Wrapper from "./Wrapper";
 import Skills from "./Skills";
 import Logical from "./Components/LogicalAnd";
 import Listapp from "./Components/Exercise3";
+import Prac_useEffect from "./Components/prac_useEffect";
+import Sign_up from "./Components/Sign_up";
+import UserList from "./Components/Fetching_data";
+import DataFetching from "./Components/Fetching_data";
 function App() {
 
   // const [fruit,setFruit]=useState("Apple");
@@ -40,6 +44,10 @@ function App() {
     }
     let collageName=["Graphic Era","IIT","NIT","MIT","DIT"]
     const [student,setStudent]=useState("Avishar")
+
+
+    const[count1,setCounter1]=useState(0);
+    const[data1,setData1]=useState(0)
 
     return (
         <div>
@@ -76,9 +84,32 @@ function App() {
       <Wrapper>
         <h1>I Am Avishar Petwal How Are You</h1>
       </Wrapper> */}
-      <Skills/>
+
+
+
+      {/* <Skills/>
       <Logical/>
-      <Listapp/>
+      <Listapp/> */}
+
+
+
+
+
+      {/* <Prac_useEffect count={count1} data={data1} />
+      <button onClick={()=>setCounter1(count1+1)}> Counter Button</button> 
+      <button onClick={()=>setData1(data1+1)}>Data Button</button>  */}
+
+
+
+
+
+    <Sign_up/>
+
+
+
+
+    <UserList/>
+
 
     </div>
   
