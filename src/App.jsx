@@ -14,6 +14,8 @@ import Prac_useEffect from "./Components/prac_useEffect";
 import Sign_up from "./Components/Sign_up";
 import UserList from "./Components/Fetching_data";
 import DataFetching from "./Components/Fetching_data";
+import College from "./Components/ContextApi/College";
+import ContextApi from "./Components/ContextApi/ContextApi";
 function App() {
 
   // const [fruit,setFruit]=useState("Apple");
@@ -51,7 +53,7 @@ function App() {
 
     return (
         <div>
-      <h1>Hello World</h1>
+      {/* <h1>Hello World</h1> */}
       {/* {sum()} */}
       {/* <Fruit/> */}
       {/* <Login/>
@@ -103,12 +105,19 @@ function App() {
 
 
 
-    <Sign_up/>
+    {/* <Sign_up/> */}
 
 
 
 
-    <UserList/>
+    {/* <UserList/> */}
+
+
+
+
+
+     
+    <ContextApi/>
 
 
     </div>
