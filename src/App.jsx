@@ -16,6 +16,7 @@ import UserList from "./Components/Fetching_data";
 import DataFetching from "./Components/Fetching_data";
 import College from "./Components/ContextApi/College";
 import ContextApi from "./Components/ContextApi/ContextApi";
+import All from "./Product_list/All";
 function App() {
 
   // const [fruit,setFruit]=useState("Apple");
@@ -110,7 +111,12 @@ function App() {
 
 
 
-    <UserList/>
+    {/* <UserList/> */}
+
+
+
+
+    <All/>
 
 
 
@@ -118,6 +124,8 @@ function App() {
 
      
     {/* <ContextApi/> */}
+
+
 
 
     </div>

@@ -6,10 +6,10 @@ function UserList() {
   const [error, setError] = useState(null);     
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users")
+    fetch("https://jsonplaceholder.typicode.com/user")
       .then((res) => {
         if (!res.ok) {
-          return ("Failed to fetch users");
+          throw  new Error("Failed to fetch users");
         }
         return res.json();
       })
