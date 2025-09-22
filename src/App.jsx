@@ -11,14 +11,14 @@ import Skills from "./Skills";
 import Logical from "./Components/LogicalAnd";
 import Listapp from "./Components/Exercise3";
 import Prac_useEffect from "./Components/prac_useEffect";
-import Sign_up from "./Components/Sign_up";
 import UserList from "./Components/Fetching_data";
 import DataFetching from "./Components/Fetching_data";
 import College from "./Components/ContextApi/College";
 import ContextApi from "./Components/ContextApi/ContextApi";
 import All from "./Product_list/All";
-import SignupForm from "./Components/Sign_up";
+
 import MiniSignupForm from "./Mini_Project/Mini_Sign_up";
+import Counter_use_Reducer from "./Components/Use_Reducer/Counter_use_Reducer";
 function App() {
 
   // const [fruit,setFruit]=useState("Apple");
@@ -133,9 +133,16 @@ function App() {
 
 
      
-    {/* <ContextApi/> */}
+    <ContextApi/>
   
-<MiniSignupForm/>
+    <MiniSignupForm/>
+
+
+
+
+
+
+{/* <Counter_use_Reducer/> */}
 
     </div>
 

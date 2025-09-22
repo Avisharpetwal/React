@@ -1,56 +1,38 @@
 import React, { useState } from "react";
 
 function MiniSignupForm() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    password: "",
-    confirmPassword: "",
-  });
-
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
-
-  const handleNameChange = (e) => {
-    setFormData({ ...formData, name: e.target.value });
-  };
-
-  const handleEmailChange = (e) => {
-    setFormData({ ...formData, email: e.target.value });
-  };
-
-  const handlePasswordChange = (e) => {
-    setFormData({ ...formData, password: e.target.value });
-  };
-
-  const handleConfirmPasswordChange = (e) => {
-    setFormData({ ...formData, confirmPassword: e.target.value });
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (
-      !formData.name ||
-      !formData.email ||
-      !formData.password ||
-      !formData.confirmPassword
-    ) {
+    if (!name || !email || !password || !confirmPassword) {
       setError("All fields are required");
       return;
     }
 
-    if (formData.password.length < 6) {
+    if (password.length < 6) {
       setError("Password must be at least 6 characters long");
       return;
     }
 
-    if (formData.password !== formData.confirmPassword) {
+    if (password !== confirmPassword) {
       setError("Passwords do not match");
       return;
     }
 
     setError("");
     alert("Signup Successful!");
+
+
+    setName("");
+    setEmail("");
+    setPassword("");
+    setConfirmPassword("");
   };
 
   return (
@@ -58,28 +40,51 @@ function MiniSignupForm() {
       <h2>Signup Form</h2>
       <p style={{ color: "red" }}>{error}</p>
       <form onSubmit={handleSubmit}>
-        
         <div>
           <label htmlFor="name">Name:</label><br />
-          <input id="name" type="text" placeholder="Enter Name" value={formData.name} onChange={handleNameChange}/>
+          <input
+            id="name"
+            type="text"
+            placeholder="Enter Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
         </div>
         <br />
 
         <div>
           <label htmlFor="email">Email:</label><br />
-          <input id="email"  type="email" placeholder="Enter Email" value={formData.email} onChange={handleEmailChange} />
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
         </div>
         <br />
 
         <div>
           <label htmlFor="password">Password:</label><br />
-          <input id="password" type="password" placeholder="Enter Password" value={formData.password} onChange={handlePasswordChange}  />
+          <input
+            id="password"
+            type="password"
+            placeholder="Enter Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
         </div>
         <br />
 
         <div>
           <label htmlFor="confirmPassword">Confirm Password:</label><br />
-          <input id="confirmPassword"  type="password"  placeholder="Confirm Password"  value={formData.confirmPassword}  onChange={handleConfirmPasswordChange} />
+          <input
+            id="confirmPassword"
+            type="password"
+            placeholder="Confirm Password"
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
+          />
         </div>
         <br />
 
