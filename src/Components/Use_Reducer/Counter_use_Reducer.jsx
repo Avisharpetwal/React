@@ -1,16 +1,17 @@
 import { useReducer } from "react";
 const initialState = { count: 0 };
 
-function reducer(data, action) {
+function reducer(state, action) {
   switch (action.type) {
     case "INCREMENT":
-      return { count: data.count + 1 };
+      return { count: state.count + 1 };
     case "DECREMENT":
-      return { count: data.count - 1 };
+      return { count: state.count - 1 };
     case "RESET":
-      return {count:data.count=0}
+      return {count:state.count=0}
   }
 }
+
 
 function Counter_use_Reducer() {
   const [state, dispatch] = useReducer(reducer, initialState);

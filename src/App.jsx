@@ -133,16 +133,27 @@ function App() {
 
 
      
-    <ContextApi/>
+    {/* <ContextApi/> */}
   
-    <MiniSignupForm/>
+    {/* <MiniSignupForm/> */}
 
 
 
 
-
+ 
 
 {/* <Counter_use_Reducer/> */}
+
+
+
+
+
+
+
+
+
+
+
 
     </div>
 
