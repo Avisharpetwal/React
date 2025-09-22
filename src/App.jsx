@@ -17,6 +17,8 @@ import DataFetching from "./Components/Fetching_data";
 import College from "./Components/ContextApi/College";
 import ContextApi from "./Components/ContextApi/ContextApi";
 import All from "./Product_list/All";
+import SignupForm from "./Components/Sign_up";
+import MiniSignupForm from "./Mini_Project/Mini_Sign_up";
 function App() {
 
   // const [fruit,setFruit]=useState("Apple");
@@ -67,12 +69,20 @@ function App() {
       {/* <button onClick={handlefruit}>change Fruit Button</button> */}
       {/* <Counter/>
       <Hide/> */}
+
+
+
       {/* <Condtion/> */}
+
+
+
       
       {/* <User name={"Avishar"} age={22}/> */}
       {/* <User name={username} age={age}/> */}
       {/* <User user={Userobj}/>
       <User user={Userobj2}/> */}
+
+
       {/* <User names={collageName}/>   */}
       {/* <Student name={student}/>
       <button onClick={()=>setStudent("Tarun")}>Change Name</button> */}
@@ -85,7 +95,7 @@ function App() {
         <h1>Hello Everyone </h1>
       </Wrapper>
       <Wrapper>
-        <h1>I Am Avishar Petwal How Are You</h1>
+      <h1>I Am Avishar Petwal How Are You</h1>
       </Wrapper> */}
 
 
@@ -116,7 +126,7 @@ function App() {
 
 
 
-    <All/>
+    {/* <All/> */}
 
 
 
@@ -124,11 +134,11 @@ function App() {
 
      
     {/* <ContextApi/> */}
-
-
-
+  
+<MiniSignupForm/>
 
     </div>
+
   
    
 
