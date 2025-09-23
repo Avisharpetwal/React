@@ -135,7 +135,7 @@ function App() {
      
     {/* <ContextApi/> */}
   
-    {/* <MiniSignupForm/> */}
+    <MiniSignupForm/>
 
 
 
