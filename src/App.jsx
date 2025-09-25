@@ -19,6 +19,9 @@ import All from "./Product_list/All";
 
 import MiniSignupForm from "./Mini_Project/Mini_Sign_up";
 import Counter_use_Reducer from "./Components/Use_Reducer/Counter_use_Reducer";
+import Parent from "./Memo_Prac/Parent";
+import UseCallbackDemo from "./UseCallBack_prac/UseCallbackDemo";
+import MemoParent from "./UseMemo/MemoParent";
 function App() {
 
   // const [fruit,setFruit]=useState("Apple");
@@ -135,7 +138,7 @@ function App() {
      
     {/* <ContextApi/> */}
   
-    <MiniSignupForm/>
+    {/* <MiniSignupForm/> */}
 
 
 
@@ -145,7 +148,12 @@ function App() {
 {/* <Counter_use_Reducer/> */}
 
 
+{/* <Parent/> */}
 
+{/* <UseCallbackDemo/> */}
+
+
+<MemoParent/>
 
 
 
