@@ -11,7 +11,8 @@ export default function ExpensiveComponent() {
     return i;
   };
 
-  const total=sum()
+  const total=useMemo(()=>sum(),[])
+  // const total=sum()
 
   return (
     <div>
